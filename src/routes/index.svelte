@@ -3,11 +3,11 @@
   import Globe from "$lib/components/Globe.svelte";
   import Hero from "$lib/components/Hero.svelte";
   import Footer from "$lib/components/Footer.svelte";
-  import Middle from "$lib/components/Middle.svelte";
+  import emissions from "$lib/data/globalCO2.json";
 </script>
 
 <MainFullVh>
   <Hero/>
-  <Globe/>
+  <Globe {emissions}/>
   <Footer/>
 </MainFullVh>

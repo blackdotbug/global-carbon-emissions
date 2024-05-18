@@ -1,0 +1,992 @@
+[
+  {
+    "name": "Afghanistan",
+    "emissions": 0.31,
+    "gdp": 1486,
+    "population": 40099460
+  },
+  {
+    "name": "Albania",
+    "emissions": 1.72,
+    "gdp": 12456,
+    "population": 2854710
+  },
+  {
+    "name": "Algeria",
+    "emissions": 4.08,
+    "gdp": 13337,
+    "population": 44177964
+  },
+  {
+    "name": "Angola",
+    "emissions": 0.51,
+    "gdp": 6137,
+    "population": 34503776
+  },
+  {
+    "name": "Argentina",
+    "emissions": 4.19,
+    "gdp": 17471,
+    "population": 45276788
+  },
+  {
+    "name": "Armenia",
+    "emissions": 2.53,
+    "gdp": 12242,
+    "population": 2790971
+  },
+  {
+    "name": "Australia",
+    "emissions": 14.91,
+    "gdp": 50705,
+    "population": 25921094
+  },
+  {
+    "name": "Austria",
+    "emissions": 7.4,
+    "gdp": 42185,
+    "population": 8922086
+  },
+  {
+    "name": "Azerbaijan",
+    "emissions": 3.72,
+    "gdp": 16972,
+    "population": 10312992
+  },
+  {
+    "name": "Bahrain",
+    "emissions": 26.05,
+    "gdp": 37323,
+    "population": 1463266
+  },
+  {
+    "name": "Bangladesh",
+    "emissions": 0.58,
+    "gdp": 4684,
+    "population": 169356240
+  },
+  {
+    "name": "Barbados",
+    "emissions": 4.36,
+    "gdp": 10387,
+    "population": 281204
+  },
+  {
+    "name": "Belarus",
+    "emissions": 6.36,
+    "gdp": 19542,
+    "population": 9578172
+  },
+  {
+    "name": "Belgium",
+    "emissions": 8.24,
+    "gdp": 40971,
+    "population": 11611416
+  },
+  {
+    "name": "Benin",
+    "emissions": 0.64,
+    "gdp": 2395,
+    "population": 12996901
+  },
+  {
+    "name": "Bolivia",
+    "emissions": 1.8,
+    "gdp": 6356,
+    "population": 12079474
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "emissions": 6.1,
+    "gdp": 11554,
+    "population": 3270948
+  },
+  {
+    "name": "Botswana",
+    "emissions": 2.37,
+    "gdp": 15612,
+    "population": 2588424
+  },
+  {
+    "name": "Brazil",
+    "emissions": 2.32,
+    "gdp": 14293,
+    "population": 214326224
+  },
+  {
+    "name": "Bulgaria",
+    "emissions": 6.14,
+    "gdp": 19754,
+    "population": 6885864
+  },
+  {
+    "name": "Burkina Faso",
+    "emissions": 0.27,
+    "gdp": 1707,
+    "population": 22100690
+  },
+  {
+    "name": "Burundi",
+    "emissions": 0.06,
+    "gdp": 723,
+    "population": 12551215
+  },
+  {
+    "name": "Cambodia",
+    "emissions": 1.21,
+    "gdp": 3796,
+    "population": 16589031
+  },
+  {
+    "name": "Cameroon",
+    "emissions": 0.38,
+    "gdp": 2792,
+    "population": 27198632
+  },
+  {
+    "name": "Canada",
+    "emissions": 14.08,
+    "gdp": 44380,
+    "population": 38155012
+  },
+  {
+    "name": "Cape Verde",
+    "emissions": 0.95,
+    "gdp": 6173,
+    "population": 587936
+  },
+  {
+    "name": "Central African Republic",
+    "emissions": 0.05,
+    "gdp": 607,
+    "population": 5457165
+  },
+  {
+    "name": "Chad",
+    "emissions": 0.14,
+    "gdp": 1403,
+    "population": 17179744
+  },
+  {
+    "name": "Chile",
+    "emissions": 4.57,
+    "gdp": 22325,
+    "population": 19493184
+  },
+  {
+    "name": "China",
+    "emissions": 7.95,
+    "gdp": 18667,
+    "population": 1425893504
+  },
+  {
+    "name": "Colombia",
+    "emissions": 1.86,
+    "gdp": 13553,
+    "population": 51516560
+  },
+  {
+    "name": "Comoros",
+    "emissions": 0.51,
+    "gdp": 1886,
+    "population": 821632
+  },
+  {
+    "name": "Congo",
+    "emissions": 1.24,
+    "gdp": 4168,
+    "population": 5835814
+  },
+  {
+    "name": "Costa Rica",
+    "emissions": 1.49,
+    "gdp": 14932,
+    "population": 5153959
+  },
+  {
+    "name": "Cote d'Ivoire",
+    "emissions": 0.43,
+    "gdp": 3853,
+    "population": 27478250
+  },
+  {
+    "name": "Croatia",
+    "emissions": 4.29,
+    "gdp": 25060,
+    "population": 4060139
+  },
+  {
+    "name": "Cuba",
+    "emissions": 1.86,
+    "gdp": 7486,
+    "population": 11256373
+  },
+  {
+    "name": "Cyprus",
+    "emissions": 5.65,
+    "gdp": 30252,
+    "population": 1244193
+  },
+  {
+    "name": "Czechia",
+    "emissions": 9.2,
+    "gdp": 31453,
+    "population": 10510748
+  },
+  {
+    "name": "Democratic Republic of Congo",
+    "emissions": 0.04,
+    "gdp": 817,
+    "population": 95894120
+  },
+  {
+    "name": "Denmark",
+    "emissions": 5.06,
+    "gdp": 49259,
+    "population": 5854246
+  },
+  {
+    "name": "Djibouti",
+    "emissions": 0.41,
+    "gdp": 3542,
+    "population": 1105562
+  },
+  {
+    "name": "Dominica",
+    "emissions": 2.1,
+    "gdp": 8419,
+    "population": 72435
+  },
+  {
+    "name": "Dominican Republic",
+    "emissions": 2.14,
+    "gdp": 17047,
+    "population": 11117873
+  },
+  {
+    "name": "Ecuador",
+    "emissions": 2.23,
+    "gdp": 9938,
+    "population": 17797736
+  },
+  {
+    "name": "Egypt",
+    "emissions": 2.26,
+    "gdp": 12868,
+    "population": 109262184
+  },
+  {
+    "name": "El Salvador",
+    "emissions": 1.19,
+    "gdp": 9017,
+    "population": 6314165
+  },
+  {
+    "name": "Equatorial Guinea",
+    "emissions": 3.44,
+    "gdp": 22538,
+    "population": 1634473
+  },
+  {
+    "name": "Estonia",
+    "emissions": 7.84,
+    "gdp": 30499,
+    "population": 1328704
+  },
+  {
+    "name": "Eswatini",
+    "emissions": 0.95,
+    "gdp": 8726,
+    "population": 1192273
+  },
+  {
+    "name": "Ethiopia",
+    "emissions": 0.16,
+    "gdp": 2191,
+    "population": 120283024
+  },
+  {
+    "name": "Finland",
+    "emissions": 6.85,
+    "gdp": 39978,
+    "population": 5535982
+  },
+  {
+    "name": "France",
+    "emissions": 4.75,
+    "gdp": 38242,
+    "population": 64531448
+  },
+  {
+    "name": "Gabon",
+    "emissions": 2.51,
+    "gdp": 15598,
+    "population": 2341185
+  },
+  {
+    "name": "Gambia",
+    "emissions": 0.29,
+    "gdp": 1964,
+    "population": 2639922
+  },
+  {
+    "name": "Georgia",
+    "emissions": 2.94,
+    "gdp": 12995,
+    "population": 3757984
+  },
+  {
+    "name": "Germany",
+    "emissions": 8.14,
+    "gdp": 46159,
+    "population": 83408560
+  },
+  {
+    "name": "Ghana",
+    "emissions": 0.64,
+    "gdp": 4191,
+    "population": 32833036
+  },
+  {
+    "name": "Greece",
+    "emissions": 5.51,
+    "gdp": 23732,
+    "population": 10445368
+  },
+  {
+    "name": "Guatemala",
+    "emissions": 1.12,
+    "gdp": 7765,
+    "population": 17608484
+  },
+  {
+    "name": "Guinea",
+    "emissions": 0.36,
+    "gdp": 1770,
+    "population": 13531909
+  },
+  {
+    "name": "Guinea-Bissau",
+    "emissions": 0.16,
+    "gdp": 1594,
+    "population": 2060730
+  },
+  {
+    "name": "Haiti",
+    "emissions": 0.21,
+    "gdp": 1592,
+    "population": 11447575
+  },
+  {
+    "name": "Honduras",
+    "emissions": 1.05,
+    "gdp": 5062,
+    "population": 10278346
+  },
+  {
+    "name": "Hong Kong",
+    "emissions": 4.37,
+    "gdp": 50006,
+    "population": 7494580
+  },
+  {
+    "name": "Hungary",
+    "emissions": 5,
+    "gdp": 28086,
+    "population": 9709784
+  },
+  {
+    "name": "Iceland",
+    "emissions": 9.48,
+    "gdp": 40413,
+    "population": 370338
+  },
+  {
+    "name": "India",
+    "emissions": 1.9,
+    "gdp": 7315,
+    "population": 1407563904
+  },
+  {
+    "name": "Indonesia",
+    "emissions": 2.25,
+    "gdp": 12234,
+    "population": 273753184
+  },
+  {
+    "name": "Iran",
+    "emissions": 7.83,
+    "gdp": 18052,
+    "population": 87923432
+  },
+  {
+    "name": "Iraq",
+    "emissions": 3.87,
+    "gdp": 12356,
+    "population": 43533592
+  },
+  {
+    "name": "Ireland",
+    "emissions": 7.53,
+    "gdp": 57278,
+    "population": 4986525
+  },
+  {
+    "name": "Israel",
+    "emissions": 6.16,
+    "gdp": 34969,
+    "population": 8900057
+  },
+  {
+    "name": "Italy",
+    "emissions": 5.69,
+    "gdp": 34827,
+    "population": 59240336
+  },
+  {
+    "name": "Jamaica",
+    "emissions": 2.34,
+    "gdp": 7193,
+    "population": 2827701
+  },
+  {
+    "name": "Japan",
+    "emissions": 8.52,
+    "gdp": 37678,
+    "population": 124612528
+  },
+  {
+    "name": "Jordan",
+    "emissions": 2.03,
+    "gdp": 9020,
+    "population": 11148288
+  },
+  {
+    "name": "Kazakhstan",
+    "emissions": 13.29,
+    "gdp": 25936,
+    "population": 19196468
+  },
+  {
+    "name": "Kenya",
+    "emissions": 0.46,
+    "gdp": 3293,
+    "population": 53005616
+  },
+  {
+    "name": "Kuwait",
+    "emissions": 24.3,
+    "gdp": 66418,
+    "population": 4250111
+  },
+  {
+    "name": "Kyrgyzstan",
+    "emissions": 1.45,
+    "gdp": 5036,
+    "population": 6527742
+  },
+  {
+    "name": "Laos",
+    "emissions": 3.15,
+    "gdp": 6961,
+    "population": 7425055
+  },
+  {
+    "name": "Latvia",
+    "emissions": 3.86,
+    "gdp": 26739,
+    "population": 1873926
+  },
+  {
+    "name": "Lebanon",
+    "emissions": 4.2,
+    "gdp": 10574,
+    "population": 5592626
+  },
+  {
+    "name": "Lesotho",
+    "emissions": 1.09,
+    "gdp": 2312,
+    "population": 2281464
+  },
+  {
+    "name": "Liberia",
+    "emissions": 0.17,
+    "gdp": 790,
+    "population": 5193422
+  },
+  {
+    "name": "Libya",
+    "emissions": 9.49,
+    "gdp": 14797,
+    "population": 6735280
+  },
+  {
+    "name": "Lithuania",
+    "emissions": 4.96,
+    "gdp": 30557,
+    "population": 2786652
+  },
+  {
+    "name": "Luxembourg",
+    "emissions": 13.19,
+    "gdp": 55347,
+    "population": 639330
+  },
+  {
+    "name": "Madagascar",
+    "emissions": 0.15,
+    "gdp": 1343,
+    "population": 28915652
+  },
+  {
+    "name": "Malawi",
+    "emissions": 0.1,
+    "gdp": 1211,
+    "population": 19889742
+  },
+  {
+    "name": "Malaysia",
+    "emissions": 8.31,
+    "gdp": 24765,
+    "population": 33573872
+  },
+  {
+    "name": "Mali",
+    "emissions": 0.32,
+    "gdp": 1643,
+    "population": 21904990
+  },
+  {
+    "name": "Malta",
+    "emissions": 3.05,
+    "gdp": 33031,
+    "population": 526751
+  },
+  {
+    "name": "Mauritania",
+    "emissions": 0.97,
+    "gdp": 3527,
+    "population": 4614981
+  },
+  {
+    "name": "Mauritius",
+    "emissions": 3.15,
+    "gdp": 19069,
+    "population": 1298922
+  },
+  {
+    "name": "Mexico",
+    "emissions": 3.7,
+    "gdp": 15853,
+    "population": 126705136
+  },
+  {
+    "name": "Moldova",
+    "emissions": 1.83,
+    "gdp": 7557,
+    "population": 3061509
+  },
+  {
+    "name": "Mongolia",
+    "emissions": 11.43,
+    "gdp": 12992,
+    "population": 3347782
+  },
+  {
+    "name": "Montenegro",
+    "emissions": 3.67,
+    "gdp": 19657,
+    "population": 627856
+  },
+  {
+    "name": "Morocco",
+    "emissions": 1.96,
+    "gdp": 8391,
+    "population": 37076588
+  },
+  {
+    "name": "Mozambique",
+    "emissions": 0.22,
+    "gdp": 1074,
+    "population": 32077074
+  },
+  {
+    "name": "Myanmar",
+    "emissions": 0.66,
+    "gdp": 5113,
+    "population": 53798088
+  },
+  {
+    "name": "Namibia",
+    "emissions": 1.48,
+    "gdp": 7796,
+    "population": 2530150
+  },
+  {
+    "name": "Nepal",
+    "emissions": 0.52,
+    "gdp": 2902,
+    "population": 30034988
+  },
+  {
+    "name": "Netherlands",
+    "emissions": 7.99,
+    "gdp": 48002,
+    "population": 17501696
+  },
+  {
+    "name": "New Zealand",
+    "emissions": 6.69,
+    "gdp": 37837,
+    "population": 5129730
+  },
+  {
+    "name": "Nicaragua",
+    "emissions": 0.79,
+    "gdp": 4979,
+    "population": 6850546
+  },
+  {
+    "name": "Niger",
+    "emissions": 0.12,
+    "gdp": 941,
+    "population": 25252722
+  },
+  {
+    "name": "Nigeria",
+    "emissions": 0.61,
+    "gdp": 5029,
+    "population": 213401328
+  },
+  {
+    "name": "North Korea",
+    "emissions": 1.98,
+    "gdp": 1577,
+    "population": 25971910
+  },
+  {
+    "name": "North Macedonia",
+    "emissions": 3.66,
+    "gdp": 13692,
+    "population": 2103329
+  },
+  {
+    "name": "Norway",
+    "emissions": 7.59,
+    "gdp": 86335,
+    "population": 5403021
+  },
+  {
+    "name": "Oman",
+    "emissions": 15.68,
+    "gdp": 46574,
+    "population": 4520474
+  },
+  {
+    "name": "Pakistan",
+    "emissions": 0.97,
+    "gdp": 5464,
+    "population": 231402112
+  },
+  {
+    "name": "Palestine",
+    "emissions": 0.67,
+    "gdp": 4699,
+    "population": 5133393
+  },
+  {
+    "name": "Panama",
+    "emissions": 2.69,
+    "gdp": 21539,
+    "population": 4351264
+  },
+  {
+    "name": "Paraguay",
+    "emissions": 1.38,
+    "gdp": 8846,
+    "population": 6703802
+  },
+  {
+    "name": "Peru",
+    "emissions": 1.67,
+    "gdp": 12550,
+    "population": 33715464
+  },
+  {
+    "name": "Philippines",
+    "emissions": 1.25,
+    "gdp": 7894,
+    "population": 113880336
+  },
+  {
+    "name": "Poland",
+    "emissions": 8.64,
+    "gdp": 30688,
+    "population": 38307724
+  },
+  {
+    "name": "Portugal",
+    "emissions": 3.88,
+    "gdp": 27138,
+    "population": 10290109
+  },
+  {
+    "name": "Qatar",
+    "emissions": 39.88,
+    "gdp": 143469,
+    "population": 2688239
+  },
+  {
+    "name": "Romania",
+    "emissions": 3.99,
+    "gdp": 26103,
+    "population": 19328558
+  },
+  {
+    "name": "Russia",
+    "emissions": 11.8,
+    "gdp": 26120,
+    "population": 145102752
+  },
+  {
+    "name": "Rwanda",
+    "emissions": 0.12,
+    "gdp": 2107,
+    "population": 13461891
+  },
+  {
+    "name": "Saint Lucia",
+    "emissions": 2.59,
+    "gdp": 9068,
+    "population": 179663
+  },
+  {
+    "name": "Saoome and Principe",
+    "emissions": 0.65,
+    "gdp": 3821,
+    "population": 223118
+  },
+  {
+    "name": "Saudi Arabia",
+    "emissions": 17.56,
+    "gdp": 49841,
+    "population": 35950396
+  },
+  {
+    "name": "Senegal",
+    "emissions": 0.68,
+    "gdp": 2607,
+    "population": 16876726
+  },
+  {
+    "name": "Serbia",
+    "emissions": 6.02,
+    "gdp": 16564,
+    "population": 7296771
+  },
+  {
+    "name": "Seychelles",
+    "emissions": 6.22,
+    "gdp": 30126,
+    "population": 106486
+  },
+  {
+    "name": "Sierra Leone",
+    "emissions": 0.13,
+    "gdp": 1665,
+    "population": 8420642
+  },
+  {
+    "name": "Singapore",
+    "emissions": 9.4,
+    "gdp": 77945,
+    "population": 5941063
+  },
+  {
+    "name": "Slovakia",
+    "emissions": 6.46,
+    "gdp": 27366,
+    "population": 5447621
+  },
+  {
+    "name": "Slovenia",
+    "emissions": 6.16,
+    "gdp": 31020,
+    "population": 2119408
+  },
+  {
+    "name": "South Africa",
+    "emissions": 7.17,
+    "gdp": 11273,
+    "population": 59392256
+  },
+  {
+    "name": "South Korea",
+    "emissions": 11.89,
+    "gdp": 40278,
+    "population": 51830136
+  },
+  {
+    "name": "Spain",
+    "emissions": 4.85,
+    "gdp": 32553,
+    "population": 47486932
+  },
+  {
+    "name": "Sri Lanka",
+    "emissions": 0.92,
+    "gdp": 11752,
+    "population": 21773438
+  },
+  {
+    "name": "Sudan",
+    "emissions": 0.49,
+    "gdp": 2533,
+    "population": 45657204
+  },
+  {
+    "name": "Sweden",
+    "emissions": 3.68,
+    "gdp": 46227,
+    "population": 10467095
+  },
+  {
+    "name": "Switzerland",
+    "emissions": 4.12,
+    "gdp": 62595,
+    "population": 8691409
+  },
+  {
+    "name": "Syria",
+    "emissions": 1.28,
+    "gdp": 2682,
+    "population": 21324366
+  },
+  {
+    "name": "Taiwan",
+    "emissions": 12.2,
+    "gdp": 51944,
+    "population": 23859904
+  },
+  {
+    "name": "Tajikistan",
+    "emissions": 1.02,
+    "gdp": 5206,
+    "population": 9750078
+  },
+  {
+    "name": "Tanzania",
+    "emissions": 0.24,
+    "gdp": 3008,
+    "population": 63588332
+  },
+  {
+    "name": "Thailand",
+    "emissions": 3.73,
+    "gdp": 16020,
+    "population": 71601104
+  },
+  {
+    "name": "Togo",
+    "emissions": 0.3,
+    "gdp": 1535,
+    "population": 8644829
+  },
+  {
+    "name": "Trinidad andobago",
+    "emissions": 23.29,
+    "gdp": 25238,
+    "population": 1525671
+  },
+  {
+    "name": "Tunisia",
+    "emissions": 2.87,
+    "gdp": 10726,
+    "population": 12262949
+  },
+  {
+    "name": "Turkey",
+    "emissions": 5.34,
+    "gdp": 26176,
+    "population": 84775408
+  },
+  {
+    "name": "Turkmenistan",
+    "emissions": 11.03,
+    "gdp": 17169,
+    "population": 6341850
+  },
+  {
+    "name": "Uganda",
+    "emissions": 0.13,
+    "gdp": 2084,
+    "population": 45853780
+  },
+  {
+    "name": "Ukraine",
+    "emissions": 4.83,
+    "gdp": 10134,
+    "population": 43531424
+  },
+  {
+    "name": "United Arab Emirates",
+    "emissions": 25.33,
+    "gdp": 72460,
+    "population": 9365149
+  },
+  {
+    "name": "United Kingdom",
+    "emissions": 5.16,
+    "gdp": 37134,
+    "population": 67281040
+  },
+  {
+    "name": "United States",
+    "emissions": 14.93,
+    "gdp": 57523,
+    "population": 336997632
+  },
+  {
+    "name": "Uruguay",
+    "emissions": 2.36,
+    "gdp": 19222,
+    "population": 3426265
+  },
+  {
+    "name": "Uzbekistan",
+    "emissions": 3.41,
+    "gdp": 12076,
+    "population": 34081452
+  },
+  {
+    "name": "Venezuela",
+    "emissions": 2.54,
+    "gdp": 4897,
+    "population": 28199862
+  },
+  {
+    "name": "Vietnam",
+    "emissions": 3.62,
+    "gdp": 7508,
+    "population": 97468024
+  },
+  {
+    "name": "Yemen",
+    "emissions": 0.35,
+    "gdp": 1972,
+    "population": 32981644
+  },
+  {
+    "name": "Zambia",
+    "emissions": 0.44,
+    "gdp": 3322,
+    "population": 19473132
+  },
+  {
+    "name": "Zimbabwe",
+    "emissions": 0.52,
+    "gdp": 1687,
+    "population": 15993525
+  }
+]
