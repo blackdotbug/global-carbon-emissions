@@ -1,5 +1,5 @@
 <script>
-	import { geoOrthographic, geoPath } from 'd3-geo';
+	import { geoOrthographic, geoPath, geoCentroid } from 'd3-geo';
 	import { drag } from 'd3-drag';
 	import { json } from 'd3-fetch';
 	import { select } from 'd3-selection';
@@ -17,7 +17,7 @@
 	let path = geoPath().projection(projection);
 	let rotation = [0, 0, 0]; // Initial rotation
 	let sphere = { type: 'Sphere' }; // Globe Outline
-	let land, borders, countries, selected, selectedData, glassNodes, size;
+	let land, borders, countries, selected, selectedData, glassNodes;
     let colorrange = extent(emissions.map(m => m.emissions));
     let colorscale = scaleQuantize(colorrange, schemeOranges[9]);
     let valuemap = new Map(emissions.map(m => [m.name, m.emissions]));
@@ -28,7 +28,7 @@
 		projection.rotate(rotation);
 		path = geoPath().projection(projection);
 	}
-    $: selectedData = emissions.find(f => f.name == selected?.properties.name);
+    $: selectedData = emissions.find(f => f.name == selected);
     $: selectedSize = radiusScale(selectedData?.emissions);
 
     /**
@@ -52,6 +52,7 @@
 		projection.rotate(rotation);
 	}
     
+
 	onMount(async () => {
 		// Geo Data from World-Atlas
 		const world = await json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json');
@@ -68,12 +69,21 @@
 
 		// Apply the drag behavior
 		dragHandler(globe);
+
 	});
-    function handleClick(e, country) {
-        selected = country;
-        if (selectedData) {
-            let glassNumber = Math.ceil(selectedData.population/100000);
-            glassNodes = range(glassNumber);
+    function handleClick(e) {
+        selected = this.dataset.geo;
+        let thisData = emissions.find(f => f.name == this.dataset.geo)
+        let selectedCentroid = geoCentroid(countries.find(f => f.properties.name == this.dataset.geo));
+        rotation = [-selectedCentroid[0], -selectedCentroid[1], rotation[2]];
+        projection.rotate(rotation);
+        if (thisData) {
+            let glassNumber = Math.ceil(thisData.population/100000);
+            let startGlass = range(glassNumber);
+            glassNodes = startGlass.map(d => {
+                return {x: 500, y: 500}
+            })
+            console.log(glassNodes);
         }
     }
 </script>
@@ -93,10 +103,11 @@
         {#if countries}
         {#each countries as country}
             <path
+                data-geo={country.properties.name}
                 d={path(country)}
                 stroke="none"
                 fill={colorscale(valuemap.get(country.properties.name))}
-                on:click={(e) => handleClick(e,country)}
+                on:click={handleClick}
                 on:keypress={() => selected = country}
             />
         {/each}
@@ -105,7 +116,7 @@
         <!--Countries' Borders -->
         <path d={path(borders)} fill="none" stroke="#000" />    
     </g>
-    {#if selected && glassNodes}
+    {#if selectedSize && glassNodes}
         <Glasses {glassNodes} size={selectedSize} />
     {/if}
 </svg>

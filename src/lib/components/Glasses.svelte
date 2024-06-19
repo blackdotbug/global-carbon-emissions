@@ -10,9 +10,9 @@
     $: nodes = [];
     $: {
         simulation
-            .force("charge", forceCollide().radius(10).iterations(2))
-            .force("r", forceRadial(400, 480, 480).strength(0.4))
-            .alphaTarget(0.1)
+            .force("charge", forceCollide().radius(10).iterations(4))
+            .force("r", forceRadial(400, 480, 480).strength(0.9))
+            .alphaTarget(0.001)
             .on("tick", () => {
                 nodes = simulation.nodes()
             }).restart();

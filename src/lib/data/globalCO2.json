@@ -96,7 +96,7 @@
     "population": 12079474
   },
   {
-    "name": "Bosnia and Herzegovina",
+    "name": "Bosnia and Herz.",
     "emissions": 6.1,
     "gdp": 11554,
     "population": 3270948
@@ -156,7 +156,7 @@
     "population": 587936
   },
   {
-    "name": "Central African Republic",
+    "name": "Central African Rep.",
     "emissions": 0.05,
     "gdp": 607,
     "population": 5457165
@@ -234,7 +234,7 @@
     "population": 10510748
   },
   {
-    "name": "Democratic Republic of Congo",
+    "name": "Dem. Rep. Congo",
     "emissions": 0.04,
     "gdp": 817,
     "population": 95894120
@@ -258,7 +258,7 @@
     "population": 72435
   },
   {
-    "name": "Dominican Republic",
+    "name": "Dominican Rep.",
     "emissions": 2.14,
     "gdp": 17047,
     "population": 11117873
@@ -282,7 +282,7 @@
     "population": 6314165
   },
   {
-    "name": "Equatorial Guinea",
+    "name": "Eq. Guinea",
     "emissions": 3.44,
     "gdp": 22538,
     "population": 1634473
@@ -294,7 +294,7 @@
     "population": 1328704
   },
   {
-    "name": "Eswatini",
+    "name": "eSwatini",
     "emissions": 0.95,
     "gdp": 8726,
     "population": 1192273
@@ -894,7 +894,7 @@
     "population": 8644829
   },
   {
-    "name": "Trinidad andobago",
+    "name": "Trinidad and Tobago",
     "emissions": 23.29,
     "gdp": 25238,
     "population": 1525671
@@ -942,7 +942,7 @@
     "population": 67281040
   },
   {
-    "name": "United States",
+    "name": "United States of America",
     "emissions": 14.93,
     "gdp": 57523,
     "population": 336997632

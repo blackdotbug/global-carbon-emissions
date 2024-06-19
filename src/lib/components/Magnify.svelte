@@ -4,7 +4,7 @@
     export let y;
 </script>
 
-<svg width={size} height={size} viewBox="0 0 48 48" x={x} y={y}>
+<svg width={size} height={size} viewBox="0 0 48 48" x={x} y={y} class={$$props.class}>
 <!-- <g transform={$$props.transform}> -->
     <path fill="#616161" d="M34.6 28.1H38.6V45.1H34.6z" transform="rotate(-45.001 36.586 36.587)"></path>
     <path fill="#616161" d="M20 4A16 16 0 1 0 20 36A16 16 0 1 0 20 4Z"></path>
