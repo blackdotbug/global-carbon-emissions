@@ -5,6 +5,7 @@
 	import { select } from 'd3-selection';
     import { extent, range } from 'd3-array';
     import { scaleQuantize, scaleLinear } from 'd3-scale';
+    import { format } from 'd3-format';
     import { schemeOranges } from 'd3-scale-chromatic';
 	import { onMount } from 'svelte';
     import { feature, mesh } from 'topojson-client';
@@ -13,16 +14,25 @@
     export let emissions;
 
 	// Map setup & rendering
-	let projection = geoOrthographic().translate([480,480]);
-	let path = geoPath().projection(projection);
 	let rotation = [0, 0, 0]; // Initial rotation
 	let sphere = { type: 'Sphere' }; // Globe Outline
-	let land, borders, countries, selected, selectedData, glassNodes;
+	let land, borders, countries, selected, glassNodes, globe, baseSVG, baseRect, projection, path;
     let colorrange = extent(emissions.map(m => m.emissions));
     let colorscale = scaleQuantize(colorrange, schemeOranges[9]);
     let valuemap = new Map(emissions.map(m => [m.name, m.emissions]));
     let radiusRange = extent(emissions.map(m => m.emissions));
     let radiusScale = scaleLinear(radiusRange, [10, 50]);
+    $: globeRect = getGlobeRect(globe);
+    $: svgRect = getSvgRect();
+	$: if (svgRect) {
+        projection = geoOrthographic().fitExtent([[svgRect.left,svgRect.top+150],[svgRect.right,svgRect.bottom-150]], sphere);
+    } else if (baseRect) {
+        projection = geoOrthographic().fitExtent([[baseRect.left,baseRect.top+150],[baseRect.right,baseRect.bottom-150]], sphere);
+
+    }
+	$: if (projection) {
+        path = geoPath().projection(projection);
+    }
 	// Reactive code to update on map dragging
 	$: if (projection) {
 		projection.rotate(rotation);
@@ -30,7 +40,6 @@
 	}
     $: selectedData = emissions.find(f => f.name == selected);
     $: selectedSize = radiusScale(selectedData?.emissions);
-
     /**
 	 * Calculates the rotation of the globe when the user drags on the map
 	 *
@@ -51,7 +60,20 @@
 
 		projection.rotate(rotation);
 	}
-    
+    function getSvgRect() {
+        if (baseSVG) {
+            return baseSVG.node().getBoundingClientRect();
+        } else {
+            return undefined;
+        }
+    }    
+    function getGlobeRect(globe) {
+        if (globe) {
+            return globe.node().getBoundingClientRect();
+        } else {
+            return undefined;
+        }
+    }    
 
 	onMount(async () => {
 		// Geo Data from World-Atlas
@@ -60,14 +82,15 @@
 		borders = mesh(world, world.objects.countries, (a, b) => a !== b);
         countries = feature(world, world.objects.countries).features;
 
-		const globe = select('.globe-path');
-
 		// Define drag behavior
 		const dragHandler = drag().on('drag', (event) => {
 			dragged({ dx: event.dx, dy: event.dy });
 		});
 
-		// Apply the drag behavior
+        globe = select('.globe-path');
+        baseSVG = select(".globe-svg");
+
+        // Apply the drag behavior
 		dragHandler(globe);
 
 	});
@@ -81,14 +104,15 @@
             let glassNumber = Math.ceil(thisData.population/100000);
             let startGlass = range(glassNumber);
             glassNodes = startGlass.map(d => {
-                return {x: 500, y: 500}
+                return {x: 0, y: 0}
             })
-            console.log(glassNodes);
         }
     }
 </script>
 
-<svg width="100%" height="100%" viewBox="0 0 960 960" preserveAspectRatio="xMidYMid meet">
+<div class="w-full h-full relative" bind:contentRect={baseRect}>
+<svg width="100%" height="100%" viewBox="0 0 {960} {960}" preserveAspectRatio="xMidYMid meet" class="absolute globe-svg" >
+    {#if typeof path == "function"}
     <g>
         <!-- Globe background -->
         <path d={path(sphere)} stroke="none" fill="rgba(73, 194, 227)" />
@@ -116,7 +140,16 @@
         <!--Countries' Borders -->
         <path d={path(borders)} fill="none" stroke="#000" />    
     </g>
-    {#if selectedSize && glassNodes}
-        <Glasses {glassNodes} size={selectedSize} />
     {/if}
 </svg>
+{#if selectedSize && glassNodes && globeRect}
+    <Glasses {glassNodes} size={selectedSize} width={globeRect.width} />
+{/if}
+{#if selected && selectedData}
+    <div class="absolute top-10 left-10 text-white tracking-wide pointer-events-none">
+        <h2 class="font-extrabold text-xl">{selected}</h2>
+        <p class="font-thin">{selectedData.emissions} per capita emissions tonnes per person</p>
+        <p class="font-thin">{format(",")(selectedData.population)} people</p>
+    </div>
+{/if}
+</div>
